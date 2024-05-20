@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery/3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- <script src="jquery-circle-progress/dist/circle-progress.js"></script> -->
+  <script src="./node_modules/jquery-circle-progress/dist/circle-progress.js"></script>
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <section class="section">
+    <div class="section__block block">
+      <div class="block__container block__container--0 step step-0" data-step="0">
+        <div class="step-0__info">
+          <h1 class="step-0__title title">
+            Calculate the nearest days that will have <br> <span class="title__intext">fatal consequences</span> <br> in your life
+          </h1>
+  
+          <div class="step-0__pictures pictures">
+            <img src="./images/money.svg" alt="money" class="pictures__item">
+  
+            <img src="./images/heart.svg" alt="love" class="pictures__item">
+  
+            <img src="./images/health.svg" alt="health" class="pictures__item">
+  
+            <img src="./images/career.svg" alt="career" class="pictures__item">
+          </div>
+          
+          <p class="step-0__accuracy">
+            Prediction accuracy: up to 96%
+          </p>
+        </div>
+
+        <button class="step-0__button button">
+          Continue
+        </button>
+      </div>
+
+      <div
+        class="block__container block-container--1 step step-1"
+        data-step="1"
+      >
+        <form class="step-1__form">
+          <div class="step-1__question">
+            <h2 class="step-1__text">
+              What's your birthdate? 
+            </h2>
+  
+            <div class="step-1__birthdate">  
+              <select
+                placeholder="Day"
+                id="day-dropdown"
+                class="step-1__dropbox input"
+              >
+                <option value="" class="step-1__dropbox-item" disabled selected>Day</option>
+              </select>
+
+              <select
+                placeholder="Month"
+                id="month-dropdown"
+                class="step-1__dropbox input input--month"
+              >
+                <option value="" class="step-1__dropbox-item" disabled selected>Month</option>
+              </select>
+
+              <select
+                placeholder="Year"
+                id="year-dropdown"
+                class="step-1__dropbox input"
+              >
+                <option value="" class="step-1__dropbox-item" disabled selected>Year</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="step-1__question">
+            <h2 class="step-1__text">
+              What's your birthplace? 
+            </h2>
+  
+            <input
+              type="text"
+              class="step-1__birthplace-input input input--place"
+              placeholder="Enter your town/city"
+              name="birthplace"
+            >
+
+            <div class="step-1__checkbox-container">
+              <input
+                type="checkbox"
+                class="step-1__checkbox icon icon--not-checked"
+                value="tea"
+                name="drink"
+              >
+
+              <p class="step-1__prompt">
+                I don't know
+              </p>
+            </div>
+          </div>
+
+          <button class="step-1__button button" disabled>
+            Continue
+          </button>
+        </form>
+      </div>
+
+      <div
+        class="block__container block-container--2 step step-2"
+        data-step="2"
+      >
+        <h1 class="step-2__title title">
+          Calculating...
+        </h1>
+
+        <div id="circle-loader" class="step-2__loader">
+          <strong class="step-2__progress"></strong>
+        </div>
+
+        <div class="step-2__results results">
+          <div class="results__result">
+            <div class="results__check-icon icon icon--not-checked"></div>
+
+            <p class="results__text">
+              Defining negative periods 
+            </p>
+          </div>
+
+          <div class="results__result">
+            <div class="results__check-icon icon icon--not-checked"></div>
+
+            <p class="results__text">
+              Anazyling most insecure spheres 
+            </p>
+          </div>
+
+          <div class="results__result">
+            <div class="results__check-icon icon icon--not-checked"></div>
+
+            <p class="results__text">
+              Your personal calendar is generated  
+            </p>
+          </div>
+        </div>
+
+        <button class="step-2__button button">
+          You will have <br> a very rough month
+        </button>
+      </div>
+
+      <div
+        class="block__container block-container--3 step step-3"
+        data-step="3"
+      >
+      <img src="./images/calendar.png" alt="calendar" class="step-3__calendar">
+
+      <p class="step-3__text">
+        There's a way to avoid problems on negative days. Press the button and send SMS to learn how
+      </p>
+
+      <button class="step-3__button button">
+        Continue
+      </button>
+      </div>
+    </div>
+
+    <p class="section__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis sagittis placerat. Curabitur turpis sapien, molestie a erat at, ullamcorper porta elit. Donec sit amet cursus sapien. Suspendisse in efficitur erat. Integer volutpat lacus quam, vel semper orci tristique a. Nunc ultrices mauris dui, laoreet suscipit mauris mollis sed. Praesent rutrum libero quam, at sollicitudin nisl luctus et. Nunc faucibus, dolor ut venenatis ullamcorper, magna ligula porttitor leo, nec volutpat velit urna a purus. Vivamus nec tristique nulla. Donec lobortis lorem eu sem condimentum, eu vulputate arcu consequat.
+    </p>
+  </section>
+</body>
+</html>
