@@ -13,7 +13,6 @@ $(() => {
       if (currentStep === 1) {
         $('#circle-loader').circleProgress({
           value: 1,
-          // size: 124,
           startAngle: -Math.PI / 2,
           thickness: 10,
           fill: {
